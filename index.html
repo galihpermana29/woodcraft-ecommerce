@@ -21,7 +21,7 @@
       </div>
       <div class="container">
          <div class="jumbotron">
-            <img src="image/jumbotron.png" alt="WoodCraft 1" class="jumbotron-img">
+            <img src="image/3.png" alt="WoodCraft 1" class="jumbotron-img">
             <h1 class="jumbotron-h1">Welcome to WoodCraft</h1>
             <p class="jumbotron-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sequi porro labore quod</p>
             <a href="./product/product.html" class="jumbotron-button">Our Products</a>
@@ -31,37 +31,42 @@
    <section id="card-product">
       <div class="container cards">
          <div class="card">
-            <img src="image/jumbotron.png" alt="WoodCraft 1" class="card-img1">
+            <img src="image/1.png" alt="WoodCraft 1" class="card-img1">
             <h1>Original Phone Holder</h1>
             <h2>$15</h2>
-            <a href="" class="card-button">Detail</a>
+            <p class="card-button">Details</p>
          </div>
          <div class="card">
             <img src="image/2.png" alt="WoodCraft 1" class="card-img1">
             <h1>Horse Phone Holder</h1>
             <h2>$10</h2>
-            <a href="" class="card-button">Detail</a>
+            <p class="card-button">Details</p>
          </div>
          <div class="card tiga">
             <img src="image/3.png" alt="WoodCraft 1" class="card-img1">
             <h1>Deer Phone Holder</h1>
             <h2>$15</h2>
-            <a href="" class="card-button">Detail</a>
+            <p class="card-button">Details</p>
          </div>
       </div>
    </section>
    <div class="modal" id="modal">
       <div class="modal-header">
          <i class="fas fa-times"></i>
-         <img src="image/2.png" alt="" >
+         <img src="image/2.png" class="modal-image" >
       </div>
       <div class="modal-body">
+         <div class="title-prod">
+            <h3>$10</h3>
+            <h2>Deer Phone Holder</h2>
+         </div>
          <div class="description">
-            <span>Description</span>
+            <!-- <span>Description</span> -->
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sequi illum eius reprehenderit culpa velit error id fugit temporibus rem at sint iusto nobis repellendus earum laudantium quod, alias veritatis?
+            <!-- <span>$10</span> -->
          </div>
          <div class="add-to-cart">
-            <input type="text" name="quantity" id="quantity" autofocus>
+            <input type="number" name="quantity" id="quantity" autofocus value="1">
             <div class="cart">
                Add to cart
                <i class="fas fa-shopping-cart"></i>
@@ -70,6 +75,13 @@
       </div>
    </div>
    <div id="overlay"></div>
+   <div class="notification">
+      <div class="success">
+         <p class="name-brand">Wow</p>
+         <p class="message">Ssafaffaaf</p>
+      </div>
+      <i class="far fa-check-circle"></i>
+   </div>
    <footer>
       <div class="container">
          <div class="company">
@@ -81,5 +93,7 @@
          </div>
       </div>
    </footer>
+
+   <script src="script.js"></script>
 </body>
 </html>
