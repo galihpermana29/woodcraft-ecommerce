@@ -15,38 +15,82 @@
    margin: 0 auto;
    padding: .5rem .5rem;
    box-sizing: border-box;
-   position: relative;
+   /* position: relative; */
 }
 
 header{
    background-color: #ececec;
    /* border: 1px solid red; */
+   /* height: 100vh; */
+
 }
 
 nav{
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: .5rem 0;
    /* border: 1px solid red; */
-   /* position: fixed;
-   left: 0;
-   right: 0; */
+   padding: 1rem 1.5rem;
+   box-sizing: border-box;
 }
 
-.menu-toggle .fa-times {
-   display: none;
+nav.sticky{
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   padding: 1rem 2rem;
+   /* z-index: 12; */
+   background-color: #fff;
+   animation: fadeIn .5s ease-in-out;
+   box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+   
+}
+
+nav h1 {
+   font-weight: 500;
+   font-size: 22px;
+}
+
+.menu-toggle {
+   position: relative;
+   /* background-color: rosybrown; */
 }
 
 .menu-toggle .fa-shopping-cart{
    font-size: 1.3rem;
+   color: #464646;
+   cursor: pointer;
+}
+
+.menu-toggle .circle{
+   position: absolute;
+   width: 15px;
+   height: 15px;
+   /* padding: .3rem; */
+   border-radius: 50%;
+   background-color: rgb(221, 9, 9);
+   top: -5px;
+   right: -10px;
+   text-align: center;
+   color: white;
+   font-size: 12px;
+   transform: scale(1);
    
 }
 
+.circle.num {
+   animation: scale .7s ease-in-out;
+}
+
+
+
 .jumbotron {
    text-align: center;
-   margin: 2rem 0;
+   /* margin: 2rem 0; */
    /* border: 1px solid black; */
+
+   
 }
 
 .jumbotron-img {
@@ -197,9 +241,7 @@ section#card-product{
    margin: .5rem 0;
 }
 
-.modal-body .title-prod{
 
-}
 .title-prod h2{
    font-weight: 500;
    font-size: 22px;
@@ -277,7 +319,7 @@ input#quantity{
 
 .notification{
    position: fixed;
-   top: 4rem;
+   top: 4.5rem;
    left: 50%;
    transform: translateX(-50%) translateY(-500%);
    transition: all .2s ease-in-out;
@@ -319,4 +361,24 @@ footer{
 
 footer p {
    margin-top: 1rem;
+}
+
+
+@keyframes fadeIn {
+   0% {
+      opacity: 0;
+   }
+
+   100%{
+      opacity: 1;
+   }
+}
+
+@keyframes scale{
+   0% {
+      transform: scale(1);
+   }
+   100%{
+      transform: scale(1.2);
+   }
 }
