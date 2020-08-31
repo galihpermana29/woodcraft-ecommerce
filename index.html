@@ -1,100 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>WoodCraft</title>
-   <!-- CDN FONT AWESOME -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-   <!-- CSS -->
-   <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   <header>
-         <nav>
-            <h1>WoodCraft</h1>
-            <div class="menu-toggle">
-               <div class="circle">
-                  0
-               </div>
-               <i class="fas fa-shopping-cart"></i>
-            </div>
-         </nav>
-      <div class="jumbotron">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WoodCraft</title>
+		<!-- CDN FONT AWESOME -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+		/>
+		<!-- CSS -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header id="header">
+			<nav>
+				<a href="#header" class="wood-craft">WoodCraft</a>
+				<div class="menu-toggle">
+					<div class="circle">0</div>
+					<i class="fas fa-shopping-cart"></i>
+				</div>
+			</nav>
+			<div class="jumbotron">
+				<div class="container jumbotron-cont">
+					<img src="image/3.png" alt="WoodCraft 1" class="jumbotron-img" />
+					<div class="jumbotron-text">
+						<p class="best-seller">Best Seller</p>
+						<h1 class="jumbotron-h1">Deer Phone Holder</h1>
+						<p class="jumbotron-p">
+							Is the best-selling product of the three WoodCraft series. Deer Phone Holder has a weight of 200gram and is designed to be easy to carry and easy to use. Made with selected wood and good quality, woodcraft can last up to 5 years of use
+						</p>
+                  <a href="#card-product" class="jumbotron-button">
+                     More products
+                  </a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section id="card-product">
+			<div class="container cards">
+				<div class="card satu">
+					<img src="image/1.png" alt="WoodCraft 1" class="card-img1" />
+					<h1>Original Phone Holder</h1>
+					<h2>$15</h2>
+					<p class="card-button det1">Details</p>
+				</div>
+				<div class="card dua">
+					<img src="image/2.png" alt="WoodCraft 1" class="card-img2" />
+					<h1>Horse Phone Holder</h1>
+					<h2>$10</h2>
+					<p class="card-button det2">Details</p>
+				</div>
+				<div class="card tiga">
+					<img src="image/3.png" alt="WoodCraft 1" class="card-img3" />
+					<h1>Deer Phone Holder</h1>
+					<h2>$15</h2>
+					<p class="card-button det3">Details</p>
+				</div>
+			</div>
+		</section>
+		<div class="modal" id="modal">
+			<div class="modal-header">
+				<i class="fas fa-times"></i>
+				<img src="image/2.png" class="" />
+			</div>
+			<div class="modal-body">
+				<div class="title-prod">
+					<h3></h3>
+					<h2></h2>
+				</div>
+				<div class="description">
+               <p>
+                  Is the best-selling product of the three WoodCraft series. Deer Phone Holder has a weight of 200gram and is designed to be easy to carry and easy to use. Made with selected wood and good quality, woodcraft can last up to 5 years of use
+            </p>
+				</div>
+				<div class="add-to-cart">
+					<input
+						type="number"
+						name="quantity"
+						id="quantity"
+                  autofocus
+                  value="1"
+					/>
+					<div class="cart">
+						Add to cart
+						<i class="fas fa-shopping-cart"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="overlay"></div>
+		<div class="notification">
+			<div class="success">
+				<p class="name-brand"></p>
+				<p class="message"></p>
+			</div>
+			<i class="far fa-check-circle"></i>
+		</div>
+		<div class="cart-page">
+			<div class="cart-page-header">
+				<h3>Your Cart</h3>
+				<i class="fas fa-chevron-down"></i>
+			</div>
+			<div class="cart-page-body">
+            <p class="cart-status">No item in your cart</p>
+            
+			</div>
+			<div class="cart-page-button">
+				<div class="checkout-button">Checkout</div>
+				<div class="delete-button">Delete</div>
+			</div>
+      </div>
+      
+      <section id="redeem">
          <div class="container">
-            <img src="image/3.png" alt="WoodCraft 1" class="jumbotron-img">
-            <h1 class="jumbotron-h1">Welcome to WoodCraft</h1>
-            <p class="jumbotron-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sequi porro labore quod</p>
-            <a href="./product/product.html" class="jumbotron-button">Our Products</a>
-         </div>
-      </div>
-   </header>
-   <section id="card-product">
-      <div class="container cards">
-         <div class="card satu">
-            <img src="image/1.png" alt="WoodCraft 1" class="card-img1">
-            <h1>Original Phone Holder</h1>
-            <h2>$15</h2>
-            <p class="card-button det1">Details</p>
-         </div>
-         <div class="card dua">
-            <img src="image/2.png" alt="WoodCraft 1" class="card-img1">
-            <h1>Horse Phone Holder</h1>
-            <h2>$10</h2>
-            <p class="card-button det2">Details</p>
-         </div>
-         <div class="card tiga">
-            <img src="image/3.png" alt="WoodCraft 1" class="card-img1">
-            <h1>Deer Phone Holder</h1>
-            <h2>$15</h2>
-            <p class="card-button det3">Details</p>
-         </div>
-      </div>
-   </section>
-   <div class="modal" id="modal">
-      <div class="modal-header">
-         <i class="fas fa-times"></i>
-         <img src="image/2.png" class="modal-image" >
-      </div>
-      <div class="modal-body">
-         <div class="title-prod">
-            <h3>$10</h3>
-            <h2>Deer Phone Holder</h2>
-         </div>
-         <div class="description">
-            <!-- <span>Description</span> -->
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sequi illum eius reprehenderit culpa velit error id fugit temporibus rem at sint iusto nobis repellendus earum laudantium quod, alias veritatis?
-            <!-- <span>$10</span> -->
-         </div>
-         <div class="add-to-cart">
-            <input type="number" name="quantity" id="quantity" autofocus value="1">
-            <div class="cart">
-               Add to cart
-               <i class="fas fa-shopping-cart"></i>
+            <h1 class="redeem-title">Get Your Discounts</h1>
+            <div class="input-redeem">
+               <input type="text" name="redeem-code" id="redeem-code" placeholder="DISCOUNT CODE" autofocus>
+               <i class="fab fa-telegram-plane"></i>
             </div>
          </div>
-      </div>
-   </div>
-   <div id="overlay"></div>
-   <div class="notification">
-      <div class="success">
-         <p class="name-brand">Wow</p>
-         <p class="message">Ssafaffaaf</p>
-      </div>
-      <i class="far fa-check-circle"></i>
-   </div>
-   <footer>
-      <div class="container">
-         <div class="company">
-            <p>Company</p>
-            <p>About</p>
-            <p>Careers</p>
-            <p>Support</p>
-            <p>Mediakit</p>
-         </div>
-      </div>
-   </footer>
+      </section>
 
-   <script src="script.js"></script>
-</body>
+      <section id="testimonials">
+         <h1 class="testimonial-title">Testimonials</h1>
+         <div class="container testimonials">
+            <div class=" testi">
+               <h1>Kim Jong Unch</h1>
+               <p>은 출판이나 그래픽 디자인 분야에서 폰트, 타이포그래피, 레이아웃 같은 그래픽 요소나 시각적 연출을 보여줄 때  </p>
+            </div>
+            <div class=" testi">
+               <h1>Denny Caknan</h1>
+               <p>Kartonyono ning Ngawi medot janjimu
+                  Ambruk cagakku nuruti angan-anganmu
+                  Sak kabehane wes tak turuti tapi malah mblenjani</p>
+            </div>
+            <div class=" testi">
+               <h1>Lisa Blackpanther</h1>
+               <p>Ha, how you like that?
+                  You gon' like that, that that that, that, that that that, that
+                  How you like that? (bara bing, bara boom, boom, boom)
+               </p>
+            </div>
+            <div class=" testi">
+               <h1>Lionel Messi</h1>
+               <p>njir 8-2
+               </p>
+            </div>
+         </div>
+      </section>
+      <section id="payment">
+         <div class="container">
+            <div class="payment-logo">
+               <img src="image/Bank-Mandiri-01.png" alt="">
+               <img src="image/PayPal-01.png" alt="">
+               <img src="image/Visa-01.png" alt="">
+               <img src="image/Bank-Negara-Indonesia-BNI-01.png" alt="">
+            </div>
+         </div>
+      </section>
+		<footer>
+			<div class="container"></div>
+				<div class="copyright">
+					<p>Love you buat yang baca</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
 </html>
