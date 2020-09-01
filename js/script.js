@@ -1,4 +1,5 @@
-const cardButton = Array.from(document.querySelectorAll('.card-button'));
+import './loader.js';
+
 const modal = document.querySelector('.modal');
 const modalImgEl = document.querySelector('.modal-header img');
 const overlay = document.querySelector('#overlay');
@@ -106,7 +107,7 @@ function addToCart(e) {
          </div> `;
 		cartCount();
 		showNotification(name);
-		message('Successfully added to you cart');
+		message('Successfully added to your cart');
 		showAddtoCartDeleteButton();
 	}
 }

@@ -1,3 +1,4 @@
+@import './loader.css';
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 
 * {
@@ -99,13 +100,13 @@ nav .wood-craft {
 
 .jumbotron-p {
 	font-weight: 100;
-	font-size: 0.8rem;
+	font-size: 1rem;
 }
 
 .jumbotron-button {
 	margin: 1.5rem 0;
 	display: block;
-	width: 120px;
+	width: 140px;
 	text-align: center;
 	text-decoration: none;
 	color: #000;
@@ -489,6 +490,12 @@ input#cart-check {
 	font-size: 15px;
 	letter-spacing: 0.02rem;
 }
+
+.checkout-button a {
+   text-decoration: none;
+   color: #fff;
+   display: block;
+}
 .delete-button {
 	border: 1px solid black;
 	text-align: center;
@@ -500,6 +507,12 @@ input#cart-check {
 	text-transform: uppercase;
 	font-size: 15px;
 	letter-spacing: 0.02rem;
+}
+
+.delete-button a {
+   text-decoration: none;
+   color: #000;
+   display: block;
 }
 
 .checkout-button.active {
